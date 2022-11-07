@@ -24,7 +24,15 @@
 		    modelViewer.activateAR();
 		  });
 		</script>
-
+		<script 
+		function launchIOSQuick LookAR(usdzSrc) {
+			  const anchor = document.createElement('a');
+			  anchor.setAttribute('rel', 'ar');
+			  anchor.appendChild(document.createElement('img'));
+			  anchor.setAttribute('href', usdzSrc);
+			  anchor.click();
+			}
+		></script>
 		<model-viewer 
 			auto-rotate
 			ar-modes="scene-viewer quick-look"
@@ -36,7 +44,10 @@
 			style="margin: auto; margin-top:1.2vw; max-width:32.5vw; height:100vw; width:  auto; background-color: Rgb(255,255,255, 0.1); 
 			--poster-color:#ffffff; --progress-bar-color: solid red; --progress-bar-height:2px; border:none;"
 
-			ar camera-controls touch-action="pan-y" ></model-viewer>
+			ar camera-controls touch-action="pan-y"
+
+
+			></model-viewer>
 <!--
 	uploads/test.usdz
 	uploads/CosmonautSuit_en.reality
