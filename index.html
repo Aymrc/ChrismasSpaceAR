@@ -4,44 +4,46 @@
 	<head>
 		<meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl825c3147959a47938204cdd798ddf96e"/>
 
-		<title>ChristmasAR</title>
+		<title>3XN/GXN_ChristmasAR</title>
 
 		<link rel="stylesheet" media="" href="3XN_GXN_ChristmasAR.css">
 
 	</head>
 
 	<body>
-		<!--
-		<img src="uploads/BackgroundImage.jpg" class="BackgroundImage">
-		<img src="uploads/QR.png" class="QR">
-		<a href="uploads/test.usdz">Christmas Party</a>-->
-		
-		<div class="AR">
-			<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-			<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-			<model-viewer 
-				auto rotate 
-				camera-controls
-				magic-leap ar
-				touch-action="pan-y" 
-				src="uploads/test.glb" 
-				alt="3XN_GXN_ChristmasAR" 
-				environment-image="uploads/space.hdr" 
-				skybox-image="uploads/space.hdr" 
-				shadow-intensity="1" 
-				ios-src="uploads/test.usdz" 
-				style="width: 100%; height: 100%; background-color: black;">
-				
-			</model-viewer>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+		<model-viewer camera-controls touch-action="pan-y" auto rotate src=".../uploads/test.gltf" ios-src="uploads/test.usdz" ar ar-scale="fixed" alt="3XN_GXN_ChristmasAR" skybox-image="uploads/space.hdr" shadow-intensity="1" style="position:  absolute; top: 0px; left:  0px; width: 99%; height: 99%; --progress-bar-height: 50px; border:  1px solid black; background-color: none;" xr-environment>
+			
+			<button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+  			</button>
+
+		</model-viewer>
+
+<!--
+			<a href="uploads/test.gltf" rel="ar" alt="Click to open" style="text-decoration:none;">
+				<p style="font-size:0.4vw; text-align:center; color:black;">(click to open it in Augmented Reality)</p>
+			</a>
+-->
+<!--
+		<div class="Image">
+			<img src="uploads/BackgroundImage.jpg" class="BackgroundImage">
+			<img src="uploads/QR.png" class="QR">
+			<h1>Christmas Party</h1>
+		</div>
+-->
+	</body>
+
+</html>
+
 <!--
 			<a href="uploads/test.usdz" rel="ar" alt="Click to open" style="text-decoration:none;">
 				<p style="font-size:0.4vw; text-align:center; color:black;">(click to open it in Augmented Reality)</p>
 			</a>
--->
-		</div>
-<!--		
+		
 			<model-viewer
 				auto-rotate
 				ar-modes="scene-viewer webxr quick-look"
@@ -65,19 +67,17 @@
 
 				ar camera-controls touch-action="pan-y">
 			</model-viewer>
--->
 
-<!-- position: absolute;
+					position: absolute;
 					height: 100vh;
 					width: 100vw;
 					margin: auto;
 					--poster-color: #ffffff;
 					--progress-bar-color: 1px solid red; 
 					--progress-bar-height: 2px; 
-					border: none;"-->
+					border: none;"
 
-
-<!-- 		
+		
 		https://raw.githubusercontent.com/Aymrc/ChrismasSpaceAR/main/uploads/test.usdz
 
 		<script>
@@ -96,9 +96,4 @@
 			  anchor.click();
 			}
 		></script>
-
 -->
-
-	</body>
-
-</html>

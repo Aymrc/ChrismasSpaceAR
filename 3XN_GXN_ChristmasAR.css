@@ -6,14 +6,21 @@ body {
 a {
 	text-decoration: none;
 	color: white;
-	font-size: 4em;
 
 	color: white;
 	mix-blend-mode: difference;
 }
 
-.AR {
-	position:  absolute;
+h1 {
+	font-size: 4em;
+	text-decoration: none;
+	margin: 5px;
+	color: white;
+	mix-blend-mode: difference;
+}
+
+.Image {
+	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -21,16 +28,16 @@ a {
 
 	z-index: 2;
 
-	animation: monitorIn 2s ease-in forwards;
-	opacity: 1;
+	animation: monitorIn 1s ease-in forwards;
+	opacity: 0;
 }
 
 @keyframes monitorIn {
 	from {
-        opacity: 0;
+        opacity: 1;
     }
     to {
-        opacity: 1;
+        opacity: 0;
     }
 }
 
@@ -42,7 +49,6 @@ a {
 	height: 100vh;
 	overflow: hidden;
 	border: none;
-	z-index: -1;
 }
 
 .QR {
