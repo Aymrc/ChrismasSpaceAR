@@ -6,19 +6,79 @@
 
 		<title>ChristmasAR</title>
 
+		<link rel="stylesheet" media="" href="3XN_GXN_ChristmasAR.css">
+
 	</head>
 
 	<body>
+		<!--
+		<img src="uploads/BackgroundImage.jpg" class="BackgroundImage">
+		<img src="uploads/QR.png" class="QR">
+		<a href="uploads/test.usdz">Christmas Party</a>-->
+		
+		<div class="AR">
+			<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+			<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-		<a href="uploads/test.usdz">Christmas Party</a>
-		https://raw.githubusercontent.com/Aymrc/ChrismasSpaceAR/main/uploads/test.usdz -->
+
+			<model-viewer 
+				auto rotate 
+				camera-controls
+				magic-leap ar
+				touch-action="pan-y" 
+				src="uploads/test.glb" 
+				alt="3XN_GXN_ChristmasAR" 
+				environment-image="uploads/space.hdr" 
+				skybox-image="uploads/space.hdr" 
+				shadow-intensity="1" 
+				ios-src="uploads/test.usdz" 
+				style="width: 100%; height: 100%; background-color: black;">
+				
+			</model-viewer>
 <!--
-		<div class="">
-			<img src="uploads/QR.png" style="width: 10vw;">
+			<a href="uploads/test.usdz" rel="ar" alt="Click to open" style="text-decoration:none;">
+				<p style="font-size:0.4vw; text-align:center; color:black;">(click to open it in Augmented Reality)</p>
+			</a>
+-->
 		</div>
+<!--		
+			<model-viewer
+				auto-rotate
+				ar-modes="scene-viewer webxr quick-look"
+				src="uploads/test.gltf"
+				ios-src="uploads/test.usdz"
+				alt="ChristmasAR"
+				shadow-intensity="0"
 
-		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+				environment-image="space.hdr"
+				skybox-image="space.hdr"
+
+				style="
+					margin: auto;
+					width: 100vw;
+					height: inherit;
+					background-color: black;
+					--poster-color: black;
+					--progress-bar-color: solid red; 
+					--progress-bar-height: 2px; 
+					border: none;"
+
+				ar camera-controls touch-action="pan-y">
+			</model-viewer>
+-->
+
+<!-- position: absolute;
+					height: 100vh;
+					width: 100vw;
+					margin: auto;
+					--poster-color: #ffffff;
+					--progress-bar-color: 1px solid red; 
+					--progress-bar-height: 2px; 
+					border: none;"-->
+
+
+<!-- 		
+		https://raw.githubusercontent.com/Aymrc/ChrismasSpaceAR/main/uploads/test.usdz
 
 		<script>
 		  window.addEventListener("load", () => {
@@ -36,30 +96,9 @@
 			  anchor.click();
 			}
 		></script>
-		<model-viewer 
-			auto-rotate
-			ar-modes="scene-viewer quick-look"
-			src="uploads/test.gltf"
-			ios-src="uploads/test.usdz"
-			alt="ChristmasAR"
-			shadow-intensity="0"
 
-			style="margin: auto; margin-top:1.2vw; max-width:32.5vw; height:100vw; width:  auto; background-color: Rgb(255,255,255, 0.1); 
-			--poster-color:#ffffff; --progress-bar-color: solid red; --progress-bar-height:2px; border:none;"
-
-			ar camera-controls touch-action="pan-y"
-
-
-			></model-viewer>
-
-	uploads/test.usdz
-	uploads/CosmonautSuit_en.reality
-
-
-		<a href="uploads/test.usdz" rel="ar" alt="" style="text-decoration:none;">
-			<p style="font-size:0.4vw; font-family: helvetica; text-align:center; color:black;">(click <b>here</b> to open it in Augmented Reality)</p>
-		</a>
 -->
+
 	</body>
 
 </html>
