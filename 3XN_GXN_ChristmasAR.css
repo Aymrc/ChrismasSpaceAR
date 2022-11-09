@@ -1,5 +1,5 @@
 body {
-	background-color:  black; 
+	background-color:  red; 
 	color: white;
 	font-family: arial;
 }
@@ -43,6 +43,15 @@ h1 {
     }
 }
 
+.desktop {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: blue;
+}
+
 .BackgroundImage {
 	position: absolute;
 	left: 0;
@@ -53,7 +62,7 @@ h1 {
 	overflow: hidden;
 	border: none;
 
-	background-color: black;
+
 }
 
 .QR {
@@ -65,4 +74,19 @@ h1 {
 
 .ARquickview {
 	display: none;
+}
+
+@media (max-width: 600px) {
+	body {
+		background-color: blue;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.QR {
+		display: none;
+	}
+
 }
