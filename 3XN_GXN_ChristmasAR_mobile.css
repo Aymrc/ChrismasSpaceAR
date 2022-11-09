@@ -1,6 +1,7 @@
 body {
+	background-color:  black; 
 	color: white;
-	font-family: arial bold;
+	font-family: arial;
 }
 
 a {
@@ -15,6 +16,7 @@ h1 {
 	margin: 5px;
 	color: white;
 	mix-blend-mode: difference;
+	font-weight: bold;
 }
 
 .Image {
@@ -23,18 +25,20 @@ h1 {
 	left: 0px;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
 
-	z-index: 2;
 
-	animation: monitorIn 5s ease-in forwards;
-	opacity: 0;
+	animation: monitorIn 4s ease-in forwards;
+	opacity: 1;
 }
 
 @keyframes monitorIn {
 	from {
+        z-index: 0;
         opacity: 1;
     }
     to {
+        z-index: -1;
         opacity: 0;
     }
 }
@@ -45,15 +49,20 @@ h1 {
 	top: 0;
 	width: 100vw;
 	height: 100vh;
+	object-fit: cover;
 	overflow: hidden;
 	border: none;
+
+	background-color: black;
 }
 
 .QR {
 	position: absolute;
-	top: 2%;
-	right: 2%;
-	width: 5%;
+	bottom: 20px;
+	right: 20px;
+	width: 200px;
+}
 
-	z-index: 1;
+.ARquickview {
+
 }

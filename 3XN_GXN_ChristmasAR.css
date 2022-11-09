@@ -28,8 +28,6 @@ h1 {
 	overflow: hidden;
 
 
-
-
 	animation: monitorIn 4s ease-in forwards;
 	opacity: 1;
 }
@@ -63,4 +61,8 @@ h1 {
 	bottom: 20px;
 	right: 20px;
 	width: 200px;
+}
+
+.ARquickview {
+	display: none;
 }
