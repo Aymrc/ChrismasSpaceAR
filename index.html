@@ -43,8 +43,7 @@
 		</model-viewer>
 </div>
 
-		<a rel="ar" href="uploads/test.usdz" class="ARquickview">
-			<script>
+		<script>
 		  window.addEventListener("load", () => {
 		    var modelViewer = document.querySelector('model-viewer');
 		    console.log("Can activate AR: " + modelViewer.canActivateAR);
@@ -60,6 +59,8 @@
 			  anchor.click();
 			}
 		></script>
+		
+		<a rel="ar" href="uploads/test.usdz" class="ARquickview">
 		<img src="uploads/QR.png" style="width: 100%;">loading
 		</a>
 
