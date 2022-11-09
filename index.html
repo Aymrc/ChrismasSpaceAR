@@ -36,7 +36,7 @@
 		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 <div class="desktop">
-		<model-viewer camera-controls touch-action="pan-y" auto rotate src="uploads/test.gltf" ios-src="uploads/test.usdz" ar ar-scale="fixed" alt="3XN_GXN_ChristmasAR" skybox-image="uploads/space.hdr" shadow-intensity="1" style="position:  absolute; top: 0px; left:  0px; width: 100vw; height: 100vh; --progress-bar-height: 15px; border:  none; background-color: black;" xr-environment>
+		<model-viewer camera-controls touch-action="pan-y" auto rotate src="uploads/test.gltf" ios-src="uploads/test.usdz" ar ar-scale="fixed" alt="3XN_GXN_ChristmasAR" skybox-image="uploads/space.hdr" shadow-intensity="1" style="position:  absolute; top: 0px; left:  0px; width: 100vw; height: 100vh; --progress-bar-height: 15px; border:  none;" xr-environment>
 			
 			<button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px;"></button>
 
@@ -44,7 +44,23 @@
 </div>
 
 		<a rel="ar" href="uploads/test.usdz" class="ARquickview">
-			<img src="uploads/QR.png" style="width: 100%;">loading
+			<script>
+		  window.addEventListener("load", () => {
+		    var modelViewer = document.querySelector('model-viewer');
+		    console.log("Can activate AR: " + modelViewer.canActivateAR);
+		    modelViewer.activateAR();
+		  });
+		</script>
+		<script 
+		function launchIOSQuick LookAR(usdzSrc) {
+			  const anchor = document.createElement('a');
+			  anchor.setAttribute('rel', 'ar');
+			  anchor.appendChild(document.createElement('img'));
+			  anchor.setAttribute('href', usdzSrc);
+			  anchor.click();
+			}
+		></script>
+		<img src="uploads/QR.png" style="width: 100%;">loading
 		</a>
 
 <!--
