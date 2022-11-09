@@ -32,7 +32,7 @@
 
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-		<!--<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>-->
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 		<model-viewer camera-controls touch-action="pan-y" auto rotate src="uploads/test.gltf" ios-src="uploads/test.usdz" ar ar-scale="fixed" alt="3XN_GXN_ChristmasAR" skybox-image="uploads/space.hdr" shadow-intensity="1" style="position:  absolute; top: 0px; left:  0px; width: 100vw; height: 100vh; --progress-bar-height: 15px; border:  none; background-color: black;" xr-environment>
 			
@@ -42,7 +42,8 @@
 		</model-viewer>
 
 
-		<a rel="ar" href="uploads/test.usdz" class="ARquickview"><div class="loading"></div>loading
+		<a rel="ar" href="uploads/test.usdz" class="ARquickview">
+			<img src="uploads/QR.png" style="width: 100%;">loading
 		</a>
 
 <!--
