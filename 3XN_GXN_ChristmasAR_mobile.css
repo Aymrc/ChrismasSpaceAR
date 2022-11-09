@@ -58,15 +58,19 @@ h1 {
 
 .QR {
 	position: absolute;
+	display: none;
 	bottom: 20px;
 	right: 20px;
 	width: 200px;
 }
 
 model-viewer {
-	display: hidden;
+	display: none;
 }
 
-.ARquickview {
-
+.loading {
+	display: block;
+	width: 100vw;
+	height: 50vh;
+	background-color: red;
 }
