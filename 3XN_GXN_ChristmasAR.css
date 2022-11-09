@@ -1,7 +1,7 @@
 body {
 	background-color:  black; 
 	color: white;
-	font-family: arial bold;
+	font-family: arial;
 }
 
 a {
@@ -16,20 +16,21 @@ h1 {
 	margin: 5px;
 	color: white;
 	mix-blend-mode: difference;
+	font-weight: bold;
 }
 
 .Image {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	height:  100%;
+	height: 100%;
 	width: 100%;
 	overflow: hidden;
 
 
 
 
-	animation: monitorIn 2s ease-in forwards;
+	animation: monitorIn 4s ease-in forwards;
 	opacity: 1;
 }
 
