@@ -63,6 +63,10 @@ h1 {
 	width: 200px;
 }
 
+model-viewer {
+	display: hidden;
+}
+
 .ARquickview {
 
 }
