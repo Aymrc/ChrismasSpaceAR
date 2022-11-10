@@ -2,35 +2,16 @@
 <html>
 
 	<head>
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>3XN/GXN_ChristmasAR</title>
+		<title>3XN/GXN_Christmas_Party_Invitation</title>
 
 		<link rel="stylesheet" href="3XN_GXN_ChristmasAR.css">
-	
-		
-		<script>
-	     /* from Apple's AR Quick Look Gallery */
-	     (function () {
-	       var isRelAR = false;
-	       var a = document.createElement('a');
-	       if (a.relList.supports('ar')) {
-	         isRelAR = true;
-	       }
-	       document.documentElement.classList.add(isRelAR ? 'relar' : 'no-relar');
-	     })();
-	    </script>
-	    <style>
-	     .relar [data-hide-on-relar] {
-	       display: none;
-	     }
-	    </style>
-
 	</head>
 
 	<body>
 
+<!-- 3D desktop --->
 		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
@@ -43,15 +24,11 @@
 		</model-viewer>
 </div>
 
+<!-- AR quicklook ios -->
 		<a rel="ar" href="uploads/ChristmasPartyInvitation.usdz" class="ARquickview">
-		<img src="uploads/loading.gif" style="width: 100%;">loading ... click on the AR logo to show
+			<img src="uploads/loading.gif" style="width: 100%;"><p style="text-align: center;">loading ... click on on the screen to show this year theme!</p>
 		</a>
 
-<!--
-		<a href="uploads/test.gltf" rel="ar" alt="Click to open" style="text-decoration:none;">
-			<p style="font-size:0.4vw; text-align:center; color:white;">(click to open it in Augmented Reality)</p>
-		</a>
--->
 
 		<div class="Image">
 			<img src="uploads/BackgroundImage.jpg" class="BackgroundImage">
