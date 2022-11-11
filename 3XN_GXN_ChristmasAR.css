@@ -111,6 +111,14 @@ h3 {
 	display: none;
 }
 
+.info {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	text-align: center;
+	z-index: 2;
+	font-size: 0.8em;
+}
 
 
 @media (max-width: 500px) {
@@ -144,5 +152,4 @@ h3 {
 
 .logo {
 	width: 130px;
-}
 }
