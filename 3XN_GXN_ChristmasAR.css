@@ -15,8 +15,6 @@ h1, h2, h3 {
 	margin: 5px;
 	color: white;
 	font-weight: bold;
-	display: inline-block;
-	background-color: red;
 }
 
 h1 {
