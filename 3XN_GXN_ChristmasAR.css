@@ -10,11 +10,12 @@ a {
 	mix-blend-mode: difference;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	text-decoration: none;
 	margin: 5px;
 	color: white;
 	font-weight: bold;
+	display: block;
 }
 
 h1 {
@@ -90,6 +91,7 @@ h3 {
 
 .QR {
 	position: absolute;
+	display: block;
 	bottom: 20px;
 	left: 20px;
 	width: 120px;
