@@ -1,7 +1,7 @@
 body {
 	background-color:  black; 
 	color: white;
-	font-family: arial;
+	font-family: "bank gothic";
 }
 
 a {
@@ -10,13 +10,23 @@ a {
 	mix-blend-mode: difference;
 }
 
-h1 {
-	font-size: 4em;
+h1, h2 {
 	text-decoration: none;
 	margin: 5px;
 	color: white;
-	mix-blend-mode: difference;
 	font-weight: bold;
+}
+
+h1 {
+	font-size: 4em;
+}
+
+h2 {
+	font-size: 2.6em;
+}
+
+h3 {
+	display: none;
 }
 
 .Image {
@@ -27,9 +37,24 @@ h1 {
 	width: 100%;
 	overflow: hidden;
 
-
-	animation: monitorIn 4s ease-in forwards;
+	animation: monitorIn 8s ease-in forwards;
 	opacity: 1;
+}
+
+.vignette_effect {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	box-shadow: inset 0 0 250px black;
+	z-index: 1;
+}
+
+.title {
+	position: absolute;
+	top: 0px;
+	z-index: 2;
 }
 
 @keyframes monitorIn {
@@ -66,8 +91,17 @@ h1 {
 .QR {
 	position: absolute;
 	bottom: 20px;
+	left: 20px;
+	width: 120px;
+	z-index: 2;
+}
+
+.logo {
+	position: absolute;
+	bottom: 20px;
 	right: 20px;
-	width: 200px;
+	width: 180px;
+	z-index: 2;
 }
 
 .ARquickview {
@@ -89,4 +123,23 @@ h1 {
 		display: block;
 		mix-blend-mode: normal;
 	}
+
+	h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	display: block;
+	font-size: 1em;
+	text-align: center;
+	margin-top: 50%;
+}
+
+.logo {
+	width: 130px;
+}
 }

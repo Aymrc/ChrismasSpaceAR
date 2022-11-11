@@ -7,6 +7,8 @@
 		<title>3XN/GXN_Christmas_Party_Invitation</title>
 
 		<link rel="stylesheet" href="3XN_GXN_ChristmasAR.css">
+		<link href="https://fonts.cdnfonts.com/css/bank-gothic" rel="stylesheet">
+                
 	</head>
 
 	<body>
@@ -17,23 +19,33 @@
 		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 <div class="desktop">
-		<model-viewer camera-controls touch-action="pan-y" auto rotate src="uploads/ChristmasPartyInvitation.gltf" ios-src="uploads/ChristmasPartyInvitation.usdz" ar ar-scale="fixed" alt="3XN_GXN_ChristmasAR" skybox-image="uploads/space.hdr" shadow-intensity="1" style="position:  absolute; top: 0px; left:  0px; width: 100vw; height: 100vh; --progress-bar-height: 15px; border:  none;" xr-environment>
+		<model-viewer camera-controls touch-action="pan-y" auto rotate src="uploads/ChristmasPartyInvitation.gltf" ios-src="uploads/ChristmasPartyInvitation.usdz" ar ar-scale="fixed" alt="3XN_GXN_ChristmasAR" skybox-image="uploads/space.jpg" shadow-intensity="1" style="position:  absolute; top: 0px; left:  0px; width: 100vw; height: 100vh; --progress-bar-height: 15px; border:  none;" xr-environment>
 			
 			<!--<button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px;"></button>-->
 
 		</model-viewer>
 </div>
 
-<!-- AR quicklook ios -->
+<!-- AR quicklook for ios -->
 		<a rel="ar" href="uploads/ChristmasPartyInvitation.usdz" class="ARquickview">
-			<img src="uploads/loading.gif" style="width: 100%;"><p style="text-align: center;">loading ... click on on the screen to show this year theme!</p>
+			<img src="uploads/loading.gif" style="position: absolute; top:50%; transform: translate(0, -50%); width: 100%;">
 		</a>
+
+		<div class="title">
+			<h1>CHRISTMAS PARTY</h1>
+			<h2>16.12.2022 - 18:00<br>
+			dress to impress</h2>
+			<h3>loading ... <br>click on on the screen or logo to show this year theme in Augmented Reality!</h3>
+		</div>
+
+		<div class="vignette_effect"></div>
+		<img src="uploads/QR.png" class="QR">
+		<img src="uploads/logo.png" class="logo">
 
 
 		<div class="Image">
-			<img src="uploads/BackgroundImage.jpg" class="BackgroundImage">
-			<img src="uploads/QR.png" class="QR">
-			<h1>Christmas Party</h1>
+				<!--<img src="uploads/BackgroundImage.jpg" class="BackgroundImage">-->
+				<img src="uploads/BackgroundImage.gif" class="BackgroundImage">
 		</div>
 
 	</body>
