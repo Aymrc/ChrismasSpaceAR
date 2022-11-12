@@ -97,6 +97,7 @@ h3 {
 
 .ARquickview {
 	display: none;
+	width: 100vw;
 }
 
 .info {
